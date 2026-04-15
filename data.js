@@ -1,0 +1,665 @@
+// ╔═══════════════════════════════════════════════════════════════════════════╗
+// ║  📋 EDIT THIS FILE TO UPDATE YOUR PORTFOLIO                             ║
+// ║  Change any text below, save, commit to GitHub — site updates instantly ║
+// ╚═══════════════════════════════════════════════════════════════════════════╝
+
+const DATA = {
+  "name": "Raju Gadiraju",
+  "firstName": "Raju",
+  "lastName": "Gadiraju",
+  "initials": "RG",
+  "photo": null,
+  "location": "Erie, PA 16506 & Fremont, CA 94555",
+  "phone": "813-378-6199",
+  "email": "contactraju5499@gmail.com",
+  "linkedin": "https://linkedin.com/in/pgadiraj",
+  "linkedinLabel": "linkedin.com/in/pgadiraj",
+  "researchgate": "https://www.researchgate.net/scientific-contributions/Prasad-Gadiraju-2319839790",
+  "openToRelocate": true,
+  "heroTitle": [
+    "Software",
+    "Consultant."
+  ],
+  "heroSubtitle": "17 Years Building Distributed Systems at Scale.",
+  "summaryP1": "Software Consultant architecting production agentic AI systems, RAG pipelines, GPU-accelerated computing, application modernization, and multi-cloud infrastructure across AWS, Azure, GCP, OCI, and IBM Cloud. Golang/Python developer building gRPC microservices, Kubernetes Operators with custom CRDs, and event-driven architectures on Kafka and Airflow. Designs autonomous agent orchestration using LangGraph, LangChain, CrewAI, Semantic Kernel, AutoGen, AWS Bedrock Agents with action groups and knowledge bases, Azure AI Agent Service with function calling and thread management, and GCP Vertex AI Agent Builder with reasoning engine — implementing hierarchical supervisor-worker delegation, A2A structured message passing, and human-in-the-loop escalation. Builds Model Context Protocol (MCP) servers with RBAC-scoped tool functions, schema versioning, circuit breakers, rate limiting, and audit trails for agent-to-enterprise integrations (Salesforce, ServiceNow, Jira, Confluence).",
+  "summaryP2": "Implements end-to-end RAG on Pinecone, Azure AI Search, AWS Bedrock Knowledge Bases, and FAISS with hybrid retrieval (dense + BM25), cross-encoder reranking, embedding versioning, and LLM-as-judge evaluation (RAGAS, DeepEval). Engineers data ingestion with PII redaction (Presidio), metadata enrichment, drift monitoring, and lineage tracking using Azure Data Factory, Azure Batch, and AWS EMR. Profiled and optimized AI workloads across multi-node NVIDIA DGX H100/A100/H200 clusters using Nsight Compute, Nsight Systems, nvprof/NVTX, compute-sanitizer, and DCGM — bottleneck detection across cuBLAS, cuDNN, NCCL, NVLink/NVSwitch, and HBM2e. Applied deep TensorRT optimization (FP16/INT8/bfloat16 calibration, layer fusion) and built KV-cache, continuous batching, speculative decoding, and PagedAttention with CUDA graph capture. Deployed Triton, vLLM, and Apache Ray with Kubernetes GPU scheduling, MIG partitioning, MPS, temporal time-slicing, and RAPIDS-accelerated pipelines for cloud and utility-scale edge AI (Erie Utility, PG&E).",
+  "summaryP3": "Architected NVIDIA AI Factory infrastructure with DGX SuperPOD, Spectrum-X Ethernet, InfiniBand NDR, BlueField DPUs, RunAI, NVIDIA Mission Control (BCM), NGC container registry, GPFS/Lustre parallel storage, and Omniverse digital twins for capacity planning. Integrated HPE ProLiant AI Compute with AMD EPYC/Instinct MI325X accelerators. Proficient in COBOL-to-Java/C# modernization using CodeBERT, GraphCodeBERT, CodeT5, IBM Watsonx ADDI, Seq2Seq transformers with RLHF, and multi-agent workflows for legacy AS/400, CICS, IMS, and DB2 for z/OS systems. Built Golang gRPC microservices for GPU inference routing with GPU-aware load balancing, CUDA context health checks, and OOM recovery. Operates Kubernetes AI infrastructure (EKS, AKS, GKE) with Helm, ArgoCD, Istio service mesh, NVIDIA GPU Operator, enterprise vGPU, and Slurm HPC. Manages Infrastructure-as-Code (Terraform, CloudFormation, Ansible) across VPC/VNet networking, IAM automation, and CI/CD on GitHub Actions, Azure DevOps, and AWS CodePipeline with SAST/DAST scans, model validation gates, and SOC2/PCI-DSS compliance. Skilled in prompt engineering, A/B testing, offline eval suites, safety tooling, and fine-tuning workflows. Delivers observability (Prometheus, Grafana, Jaeger, LangSmith) achieving 99.99% uptime, 45% cost reduction, sub-second inference latency, MTTD reduction of 40%, and MTTR reduction of 50%.",
+  "stats": [
+    {
+      "value": "17+",
+      "label": "Years"
+    },
+    {
+      "value": "12",
+      "label": "Certifications"
+    },
+    {
+      "value": "99.99%",
+      "label": "Uptime"
+    },
+    {
+      "value": "45%",
+      "label": "Cost Reduced"
+    }
+  ],
+  "availableFor": [
+    "Agentic AI",
+    "RAG Architecture",
+    "MCP Development",
+    "App Modernization",
+    "Golang Development",
+    "Kubernetes Engineering",
+    "AI/ML Engineering",
+    "MLOps",
+    "GPU Infrastructure",
+    "Platform Engineering"
+  ],
+  "skills": [
+    {
+      "cat": "GPU / HPC",
+      "items": [
+        "NVIDIA CUDA Toolkit",
+        "cuBLAS",
+        "cuDNN",
+        "NCCL",
+        "Thrust/CUB",
+        "TensorRT",
+        "Triton Inference Server",
+        "vLLM",
+        "FAISS-GPU",
+        "Nsight Compute",
+        "Nsight Systems",
+        "nvprof/NVTX",
+        "compute-sanitizer",
+        "DCGM",
+        "nvidia-smi",
+        "Slurm",
+        "MIG",
+        "MPS",
+        "Temporal Time-Slicing",
+        "Enterprise vGPU",
+        "NVLink/NVSwitch",
+        "DGX SuperPOD",
+        "PagedAttention",
+        "RAPIDS cuDF/cuML/cuGraph",
+        "NVIDIA Container Toolkit",
+        "NVIDIA GPU Operator",
+        "RunAI",
+        "NVIDIA Mission Control (BCM)",
+        "NGC Container Registry",
+        "Spectrum-X Ethernet",
+        "BlueField DPUs",
+        "GPFS/Lustre",
+        "NVIDIA Omniverse",
+        "HPE ProLiant AI Compute",
+        "HPE iLO",
+        "Liquid Cooling"
+      ]
+    },
+    {
+      "cat": "IBM Mainframes & Ecosystem",
+      "items": [
+        "COBOL",
+        "JCL",
+        "DB2",
+        "DB2 for z/OS",
+        "Control-M",
+        "IBM Watsonx",
+        "ADDI (Application Dependency Discovery Insights)",
+        "z/OS",
+        "zLinux",
+        "RACF",
+        "ACF2",
+        "CICS",
+        "IMS",
+        "AS/400",
+        "Synon",
+        "IBM Cloud",
+        "API Connect",
+        "MQ"
+      ]
+    },
+    {
+      "cat": "Programming Languages",
+      "items": [
+        "Golang",
+        "Python",
+        "C",
+        "C++",
+        "Java",
+        "COBOL",
+        "SQL",
+        "PL/SQL",
+        "SparkSQL",
+        "Shell",
+        "Bash",
+        "Perl"
+      ]
+    },
+    {
+      "cat": "Agentic AI & RAG",
+      "items": [
+        "LangGraph",
+        "LangChain",
+        "CrewAI",
+        "Semantic Kernel",
+        "AutoGen",
+        "AWS Bedrock Agents",
+        "Azure AI Agent Service",
+        "GCP Vertex AI Agent Builder",
+        "Model Context Protocol (MCP)",
+        "OpenAI Functions",
+        "FAISS",
+        "Pinecone",
+        "ChromaDB",
+        "Weaviate",
+        "RAGAS",
+        "DeepEval",
+        "LangSmith",
+        "Langfuse",
+        "Prompt Engineering",
+        "Vector Databases",
+        "RLHF"
+      ]
+    },
+    {
+      "cat": "AI/ML Platforms",
+      "items": [
+        "AWS SageMaker",
+        "AWS Bedrock",
+        "Azure OpenAI",
+        "Azure AI Foundry",
+        "Azure AI Agent Service",
+        "Azure ML",
+        "GCP Vertex AI",
+        "Vertex AI Gemini",
+        "IBM Watsonx",
+        "Hugging Face",
+        "OpenAI API",
+        "MLflow",
+        "Kubeflow",
+        "NVIDIA NIM",
+        "Weights & Biases"
+      ]
+    },
+    {
+      "cat": "ML Frameworks & Models",
+      "items": [
+        "PyTorch",
+        "TensorFlow",
+        "Keras",
+        "Hugging Face Transformers",
+        "CodeBERT",
+        "GraphCodeBERT",
+        "CodeT5",
+        "Semantic Kernel",
+        "AutoGen",
+        "ONNX",
+        "TensorRT",
+        "Ray",
+        "Optuna",
+        "TFX",
+        "DeepSpeed",
+        "FSDP",
+        "AutoML",
+        "XGBoost",
+        "LightGBM",
+        "CatBoost",
+        "LSTM",
+        "Seq2Seq",
+        "FastText",
+        "SentencePiece"
+      ]
+    },
+    {
+      "cat": "AWS",
+      "items": [
+        "IAM",
+        "TGW",
+        "EC2",
+        "S3",
+        "CloudFront",
+        "CDN",
+        "CloudFormation",
+        "RDS",
+        "EKS",
+        "VPC",
+        "NAT",
+        "WAF",
+        "KMS",
+        "ACM",
+        "SG",
+        "ECR",
+        "EBS",
+        "EFS",
+        "ECS",
+        "Fargate",
+        "Bedrock",
+        "Bedrock Agents",
+        "Route 53",
+        "CodePipeline",
+        "CodeBuild",
+        "CodeDeploy",
+        "Direct Connect",
+        "SageMaker",
+        "Rekognition",
+        "Textract",
+        "Transcribe",
+        "Polly",
+        "Comprehend",
+        "Lex",
+        "Translate",
+        "Athena",
+        "Glue",
+        "Redshift",
+        "Lambda",
+        "Kinesis",
+        "QuickSight",
+        "App Mesh",
+        "Step Functions",
+        "Inferentia",
+        "Q Developer",
+        "AWS Batch",
+        "AWS Autopilot"
+      ]
+    },
+    {
+      "cat": "Azure",
+      "items": [
+        "AD",
+        "IAM",
+        "AKS",
+        "Blob Storage",
+        "ARM/Bicep",
+        "CDN",
+        "Azure OpenAI",
+        "Azure AI Agent Service",
+        "ADF",
+        "Azure Databricks",
+        "Key Vault",
+        "Azure Monitor",
+        "Azure DNS",
+        "SQL Database",
+        "VNet",
+        "NAT Gateway",
+        "ExpressRoute",
+        "Private Endpoint",
+        "Service Fabric",
+        "ADLS",
+        "Functions",
+        "Logic Apps",
+        "Cosmos DB",
+        "Service Bus",
+        "Azure ML",
+        "Cognitive Services",
+        "Container Registry",
+        "App Service",
+        "API Management",
+        "Application Gateway",
+        "Load Balancer",
+        "Security Center",
+        "Azure AutoML",
+        "Resource Manager"
+      ]
+    },
+    {
+      "cat": "GCP",
+      "items": [
+        "IAM",
+        "GKE",
+        "Compute Engine",
+        "Cloud Storage",
+        "BigQuery",
+        "Looker",
+        "Vertex AI",
+        "Vertex AI Agent Builder",
+        "Gemini",
+        "Cloud Build",
+        "Cloud Composer",
+        "Cloud Deployment Manager",
+        "Anthos",
+        "Service Mesh",
+        "App Engine",
+        "Cloud Functions",
+        "Cloud Run",
+        "Pub/Sub",
+        "Dataflow",
+        "Firestore",
+        "Bigtable",
+        "Spanner",
+        "Cloud DNS",
+        "Cloud KMS",
+        "Secret Manager",
+        "Container Registry",
+        "Firebase",
+        "StackDriver",
+        "Cloud Load Balancing",
+        "Cloud Monitoring",
+        "Cloud Logging",
+        "Storage Transfer Service"
+      ]
+    },
+    {
+      "cat": "OCI",
+      "items": [
+        "IAM",
+        "Compute",
+        "Object Storage",
+        "Monitoring & Logging",
+        "Database Services",
+        "OKE",
+        "Data Integration",
+        "Oracle Integration Cloud",
+        "Autonomous Data Warehouse",
+        "Multicloud Services"
+      ]
+    },
+    {
+      "cat": "Container & Orchestration",
+      "items": [
+        "Docker",
+        "Kubernetes",
+        "Helm",
+        "ArgoCD",
+        "Istio",
+        "Ingress",
+        "Calico",
+        "Trivy",
+        "Snyk",
+        "Ranger",
+        "RBAC",
+        "Rancher",
+        "Flannel",
+        "Slurm HPC",
+        "KubeFlow",
+        "KubeVirt",
+        "Mesos",
+        "Protobuf/gRPC",
+        "GitOps"
+      ]
+    },
+    {
+      "cat": "DevOps & Observability",
+      "items": [
+        "Git",
+        "GitHub Actions",
+        "GitLab",
+        "Bitbucket",
+        "Perforce",
+        "SVN",
+        "Azure DevOps",
+        "Jenkins",
+        "Bamboo",
+        "Terraform",
+        "Terraform Enterprise",
+        "Vault",
+        "Ansible",
+        "Chef",
+        "Puppet",
+        "Backstage",
+        "Maven",
+        "Gradle",
+        "Nexus",
+        "Prometheus",
+        "Grafana",
+        "Jaeger",
+        "ELK",
+        "Splunk",
+        "Solr",
+        "Lucene",
+        "SonarQube",
+        "Selenium",
+        "VeraCode",
+        "AppDynamics",
+        "Dynatrace",
+        "Sensu",
+        "Nagios",
+        "Zabbix",
+        "CloudWatch",
+        "SOC2",
+        "PCI-DSS"
+      ]
+    },
+    {
+      "cat": "Data & Databases",
+      "items": [
+        "Kafka",
+        "Flink",
+        "Airflow",
+        "Control-M",
+        "Oozie",
+        "MapReduce",
+        "Databricks",
+        "Snowflake",
+        "Hadoop",
+        "HDFS",
+        "Oracle",
+        "PostgreSQL",
+        "MySQL",
+        "Sybase",
+        "DB2",
+        "MemSQL",
+        "Teradata",
+        "MongoDB",
+        "Cassandra",
+        "Redis",
+        "Graph DB"
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "company": "Ema Unlimited",
+      "role": "Software Consultant - client locations",
+      "location": "Mountain View, CA and Erie, PA",
+      "dates": "Apr 2024 – Present",
+      "bullets": [
+        "Architected production RAG pipelines on Azure AI Search, Pinecone, and AWS Bedrock Knowledge Bases with recursive and semantic chunking, hybrid retrieval (dense embeddings + BM25), and cross-encoder reranking. Evaluated retrieval quality with RAGAS and DeepEval measuring precision, recall, and MRR. Integrated multi-turn conversational grounding with prompt versioning and prompt engineering, hallucination guardrails, and citation attribution.",
+        "Developed MCP servers in Golang connecting autonomous agents to enterprise systems (Salesforce, ServiceNow, Jira, Confluence) with RBAC scopes, schema versioning, circuit breakers, and structured audit logging. Deployed AWS Bedrock Agents with action groups and knowledge bases, Azure AI Agent Service with function calling and thread management, and GCP Vertex AI Agent Builder with extensions and reasoning engine.",
+        "Designed agentic orchestration using LangGraph state machines with conditional branching, checkpointing, and error recovery. Built hierarchical supervisor-worker setups with A2A communication, confidence scoring, automated replanning, and human-in-the-loop escalation.",
+        "Profiled and optimized large-scale AI training and inference workloads (transformers, multimodal, diffusion, recommender systems) across multi-node NVIDIA DGX H100/A100/H200 clusters using Nsight Compute, Nsight Systems, nvprof/NVTX, compute-sanitizer, and DCGM. Built bottleneck-detection frameworks across GPU compute, HBM2e memory, NVLink/NVSwitch interconnects, and CUDA libraries (cuBLAS, cuDNN, NCCL, TensorRT), maximizing tensor core utilization and scaling efficiency. Partnered with PyTorch/TensorFlow framework teams to upstream performance fixes.",
+        "Architected NVIDIA AI Factory infrastructure following Enterprise Reference Architectures — DGX H200/B200 accelerated compute, Spectrum-X Ethernet, InfiniBand NDR networking, and BlueField DPUs. Designed rail-optimized compute fabrics with liquid cooling configurations for dense GPU deployments. Coordinated with NVIDIA Pladium team for DGX SuperPOD environments using Base Command Manager (BCM) for cluster provisioning, SLURM/Kubernetes orchestration, and Run:AI for dynamic GPU resource allocation and topology-aware scheduling. Achieved sub-200ms response times for critical services.",
+        "Built edge AI inference systems for Erie Utility and PG&E grid operations, ingesting live SCADA, PMU, and smart meter streams on NVIDIA T4 GPUs. Developed real-time pipelines for anomaly detection, load forecasting, and fault prediction using TensorRT-optimized models with CUDA stream concurrency and sub-millisecond latency.",
+        "Engineered a Workflow Engineer Dashboard for utility operations — real-time visibility into edge fleet health, inference throughput, sensor data quality, and GPU utilization. Backend built with Golang gRPC and Python FastAPI, integrating DCGM telemetry, nvidia-smi, and Nsight-based profiling into Prometheus/Grafana.",
+        "Built Golang gRPC microservices on EKS/AKS using protocol buffers v3 with client-side load balancing for GPU inference routing with GPU-aware load balancing, CUDA context health checks, and OOM recovery. Developed Kubernetes Operators with NVIDIA GPU Operator and custom CRDs for inference server lifecycle, HPA scaling on DCGM metrics, GPU SKU node affinity, with reconciliation loops and drift correction.",
+        "Implemented KV-cache management with CUDA paged memory allocation and attention cache partitioning across HBM2e. Built continuous batching schedulers with concurrent CUDA stream execution and per-stream cuBLAS/cuDNN handles. Developed speculative decoding pipelines with draft/verify stages on separate GPU streams.",
+        "Deployed and tuned NVIDIA Triton Inference Server and vLLM with dynamic batching for cloud and edge deployments. Applied deep TensorRT optimization — layer fusion, FP16/INT8/bfloat16 calibration, CUDA kernel auto-tuning. Configured tensor parallelism via NCCL collectives and PagedAttention with CUDA graph capture. Served models via NVIDIA NIM, Azure ML, AWS SageMaker, GCP Vertex AI endpoints with online prediction, Ollama, and GGUF quantization for Llama-family models.",
+        "Designed multi-cloud GPU infrastructure with Terraform provisioning H100/A100 pools on AWS (EFA, p5/p4d instances), Azure (InfiniBand, ND-series), and GCP (GPUDirect-TCPX) with CUDA Toolkit version pinning and driver management. Built NVIDIA Container Toolkit images with version-locked CUDA dependencies ensuring ABI compatibility.",
+        "Accelerated FAISS-GPU vector search (HNSW, IVF-PQ, IVF-Flat) with tuned nprobe, codebook sizes, multi-GPU sharding, and CUDA stream isolation for sub-100ms query latency over 10M+ document collections. Built RAPIDS-accelerated data pipelines (cuDF, cuML, cuGraph) for sensor preprocessing and feature engineering. Engineered embedding pipelines with OpenAI text-embedding-3 and Cohere embed-v3 with embedding versioning and automated re-indexing.",
+        "Built data ingestion pipelines handling 20+ file formats with PII redaction (Presidio), metadata enrichment, and embedding quality scoring. Used Azure Data Factory, Azure Batch, and AWS EMR for large-scale parallel vectorization. Integrated Azure AI Foundry for centralized model management, evaluation benchmarks, and fine-tuning workflows.",
+        "Evaluated and fine-tuned LLMs (GPT-4, Claude, Gemini, Llama) using offline eval suites and LLM-as-judge pipelines for answer relevance, faithfulness, and toxicity assessment. Optimized inference on H100/A100 GPUs with bfloat16/int8 quantization, KV-cache optimization, continuous batching, and NVIDIA NVMe storage for fast model loading. Managed GPU scheduling with Slurm across multi-node clusters and CoreWeave/Lambda Labs GPU clusters with spot fallback.",
+        "Engineered fine-tuned CodeBERT, GraphCodeBERT, and CodeT5 models for COBOL mainframe code analysis, training custom NLP pipelines combining LSTM and attention mechanisms for intent classification from 5M+ lines of legacy code. Formulated graph neural networks for dependency discovery across monolithic AS/400 and Synon systems. Constructed ensemble gradient boosting models (XGBoost, LightGBM, CatBoost) for refactoring complexity prediction. Deployed Seq2Seq transformers with RLHF for COBOL-to-Java/Spring Boot code translation with BERTScore and BLEU metrics.",
+        "Developed IBM Watsonx ADDI PoC integrating CodeBERT/GraphCodeBERT with automated discovery and analysis of COBOL/DB2 for z/OS systems. Applied explainable AI (SHAP, LIME) for modernization decisions. Formulated unsupervised clustering (DBSCAN, hierarchical clustering) with dimensionality reduction (t-SNE, UMAP) for code clone detection. Built federated learning for privacy-preserving model training with active learning strategies and Kullback-Leibler divergence drift detection. Designed REST/GraphQL APIs exposing legacy COBOL, CICS, and IMS applications through IBM Cloud with API Connect, MQ, OAuth2, OpenAPI, and mTLS.",
+        "Deployed Kafka consumer groups and Airflow DAGs for event-driven agent coordination and real-time vector index updates. Configured Istio service mesh with VirtualServices for canary deployments, traffic mirroring, and mTLS. Containerized with Docker multi-stage builds, Helm charts, and Trivy scanning.",
+        "Managed multi-cloud infrastructure using Terraform modules for Kubernetes clusters, GPU node pools (H100/A100), vector databases, and MCP deployments. Implemented CI/CD on Azure DevOps and AWS CodePipeline with SAST/DAST scans, model validation gates, CUDA Toolkit compatibility gates, and GPU-accelerated integration tests. Applied prompt injection defenses, input sanitization, and sandboxed tool execution. Maintained secrets hygiene with Azure Key Vault and AWS Secrets Manager. Used ArgoCD for GitOps automation with Prometheus alerting and Grafana dashboards. Reduced infrastructure costs 45% through reserved instance optimization, spot strategies, MIG partitioning, and right-sizing.",
+        "Configured NGC container registry integration with optimized AI frameworks (PyTorch, TensorFlow, RAPIDS) on DGX OS. Implemented automated health diagnostics via DCGM and NVIDIA Mission Control telemetry, in-memory checkpointing for fault-tolerant distributed training, and NVIDIA Omniverse digital twins for pre-deployment facility simulation and capacity planning.",
+        "Managed Slurm-based scheduling across NVIDIA H100/A100 DGX SuperPOD clusters with NCCL-distributed workloads. Integrated Slurm with Kubernetes and NVIDIA GPU Operator for hybrid HPC/cloud-native scheduling across on-premises DGX and cloud node pools (AWS p5/p4d, Azure ND-series). Deployed Apache Ray for distributed inference orchestration."
+      ]
+    },
+    {
+      "company": "Fidelity Investments",
+      "role": "Senior Consultant",
+      "location": "Westlake, TX",
+      "dates": "Jun 2023 – Apr 2024",
+      "bullets": [
+        "Architected LLM inference services using GPT-4, Claude, and Gemini on AWS SageMaker, AWS Bedrock, Azure ML, and GCP Vertex AI with multi-region deployment. Built Python orchestration using FastAPI and Celery for distributed request routing with async task processing. Utilized AWS NVIDIA GPU instances (P5/H100, P4/A100, G5/A10G, G4dn/T4) with NVLink, Tensor cores, and Deep Learning AMIs. Leveraged AWS Inferentia for cost-effective inference and AWS Batch for batch processing.",
+        "Built ML pipelines with PyTorch DDP, TensorFlow tf.distribute, FSDP, and DeepSpeed across multi-GPU clusters. Tracked experiments in MLflow and Weights & Biases, tuned hyperparameters with Optuna. Developed Kubeflow pipelines and AutoML (AWS Autopilot, Azure AutoML) for preprocessing, training, evaluation, and deployment, reducing model iteration cycles by 60%.",
+        "Deployed containerized inference on EKS/AKS with TensorFlow Serving and TorchServe. Built auto-scaling on inference queue depth and GPU utilization with Prometheus, OpenTelemetry tracing, and structured logging. Optimized with model quantization (int8, fp16), pruning, and knowledge distillation reducing deployment latency by 50%.",
+        "Engineered CodeBERT and GraphCodeBERT models for COBOL code analysis across 1000+ legacy financial systems. Trained LSTM and attention-based pipelines for business logic extraction from JCL and Control-M batch scheduler code. Built multi-agent workflows (DependencyMapperAgent, BusinessLogicExtractor, TestGenerator) using Semantic Kernel achieving 50% faster analysis. Applied SHAP and LIME explainability on gradient boosting models for refactoring complexity prediction.",
+        "Built RAG prototypes on Azure AI Search with vector indexing, hybrid search, and semantic ranking. Integrated Azure OpenAI with API Management, Functions, and Key Vault for token-metered access with role-based policies.",
+        "Automated GPU infrastructure provisioning with Terraform and CloudFormation for H100/A100 clusters, MLflow registries, and Kubeflow installations. Built CI/CD on GitHub Actions with pytest, model validation gates, and blue-green deployments. Introduced IaC templates with Backstage for self-service provisioning. Configured distributed training using FSDP and DeepSpeed for LLM fine-tuning on financial datasets.",
+        "Optimized inference latency via TensorRT, ONNX conversion, and NVIDIA GPU Operator with Kubernetes device plugins. Built TFX pipelines for data validation, transform, training, and serving with drift detection and automated retraining triggers achieving sub-second production latency. Implemented SOC2/PCI-DSS compliance frameworks.",
+        "Led AI platform engineering across investment analytics — stakeholder alignment, roadmap planning, model evaluation suites with safety tooling, fine-tuning traceability, and GPU utilization cost optimization with Reserved/Spot Instance procurement."
+      ]
+    },
+    {
+      "company": "Genpact Digital / HPE Labs",
+      "role": "Senior Consultant / Senior Principal Consultant",
+      "location": "Milpitas, CA and Hyderabad, India",
+      "dates": "Aug 2019 – May 2023",
+      "bullets": [
+        "Built aviation risk assessment data pipelines across GCP, AWS, Azure, and OCI. Integrated OCI Compute, Object Storage, and Oracle Autonomous Database for hybrid data flows. Designed DataLake architectures with Airflow orchestration. Refined HP GreenLake hardware and data center patterns with AI infrastructure test best practices including model validation, stress testing, and automated benchmarking.",
+        "Integrated HPE ProLiant Compute XD685 with AMD EPYC processors and Instinct MI325X accelerators for high-performance AI workloads with HPE iLO management. Engineered ASIC designs with HPC networking and GoRPC frameworks for low-latency microservices. Deployed observability tools to monitor GPU/TPU utilization and detect bottlenecks.",
+        "Developed self-service ML model deployment using Data Catalog, Terraform, and Cloud Functions. Designed synthetic data pipelines to evaluate AI models under real-world conditions. Established CI/CD pipelines for AI deployment with version control, rollback mechanisms, and continuous monitoring for model drift detection.",
+        "Developed application modernization solution for legacy AS/400 Synon COBOL systems, building cloud-native microservices using CodeBERT and GraphCodeBERT fine-tuned models for automated code analysis. Formulated graph neural networks (GNNs) for dependency extraction from Synon-generated COBOL code. Trained ensemble gradient boosting (XGBoost, LightGBM) for refactoring complexity and cloud migration cost estimation. Deployed RAG pipelines using Synon documentation and AS/400 internals as vector context. Engineered Seq2Seq transformers for COBOL-to-Java/Spring Boot code translation with reinforcement learning agents optimizing BLEU and BERTScore metrics."
+      ]
+    },
+    {
+      "company": "Cognizant Technologies / Franklin Templeton",
+      "role": "Principal Infra Developer / Senior Software Engineer",
+      "location": "Hyderabad, India",
+      "dates": "Jul 2016 – Jul 2019",
+      "bullets": [
+        "Architected a Data Lake on Azure for Franklin Templeton using HDInsight, Domain Join Clusters, Azure Functions, AKS, and Spark for data transformation. Built Fund Manager dashboard pipelines with Apache Airflow orchestration and Azure DevOps CI/CD.",
+        "Configured secure Azure Databricks clusters with AD DS integration, Private Link, VNet Peering, Custom DNS, and NSGs. Optimized cluster performance with autoscaling policies and integrated Key Vault for credential management via Databricks Secrets.",
+        "Built a GCP-based chatbot integrating Pub/Sub, Dataflow, Firestore, Compute Engine, Cloud Storage, Storage Transfer Service, and BigQuery/Looker for real-time message processing and analytics.",
+        "Developed an AWS data platform for HBO Live Stream using Kafka for real-time event ingestion with containerized Java microservices, handling high-traffic live streaming events at scale.",
+        "Modernized a cloud-based data pipeline on Azure integrating Databricks, Azure Data Factory, and Informatica ETL for data transformation and orchestration across curated data layers."
+      ]
+    },
+    {
+      "company": "Oracle",
+      "role": "Senior Software Engineer",
+      "location": "Singapore City, Singapore and Hyderabad, India",
+      "dates": "Nov 2010 – Jun 2016",
+      "bullets": [
+        "Developed features for the Oracle Fusion product family within the Hadoop ecosystem using Hive, Sqoop, HBase, Oozie, ZooKeeper, Cassandra, MongoDB, Graph DB, and HDFS. Provisioned and maintained environments for Oracle Exalogic, Exadata, Cloudera, and Siebel platforms supporting enterprise-scale data processing.",
+        "Managed installations, migrations, and performance tuning for Oracle Grid, Microsoft Clusters, IBM HACMP, Java Sun Clusters, WebLogic, WebSphere, and RedHat clustered environments. Led build and release engineering for Oracle products, improving system reliability and deployment consistency across clustered infrastructure.",
+        "Managed DB2 and DB2 for z/OS database environments supporting Siebel applications in production. Oversaw database administration, performance tuning, backup and recovery, and ensured high availability. Optimized Siebel-to-DB2 integration with schema migrations, query tuning, and data consistency across modules."
+      ]
+    },
+    {
+      "company": "Symantec",
+      "role": "SQA Engineer",
+      "location": "Pune, India",
+      "dates": "Jun 2008 – Nov 2010",
+      "bullets": [
+        "Tested and validated high availability, disaster recovery, and replication for Oracle RAC, Sybase, DB2, PostgreSQL, and MySQL database clusters across Linux, Windows, and Unix. Integrated Veritas Clustered File Systems with SAN/NAS/NetApp storage for data consistency and reliability.",
+        "Administered DB2 databases across testing and production environments. Performed capacity planning, optimized DMS table spaces, managed data movement with Export/Import/Load utilities, and maintained backup and RUNSTATS procedures with automated purging policies.",
+        "Automated deployment and monitoring workflows for database clusters using Python and Shell scripts, scheduling via cron tab for batch operations, improving system uptime and streamlining disaster recovery processes across multiple platforms."
+      ]
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Microsoft Azure Solution Architect Certified",
+      "logoKey": "microsoft",
+      "brandColor": "#0078D4"
+    },
+    {
+      "name": "Google Cloud Certified Professional - Cloud Architect",
+      "logoKey": "googlecloud",
+      "brandColor": "#4285F4"
+    },
+    {
+      "name": "AWS Machine Learning Certified",
+      "logoKey": "aws",
+      "brandColor": "#FF9900"
+    },
+    {
+      "name": "IBM Certified Database Administrator - DB2",
+      "logoKey": "oracle",
+      "brandColor": "#054ADA"
+    },
+    {
+      "name": "CKA - Certified Kubernetes Administrator by CNCF",
+      "logoKey": "kubernetes",
+      "brandColor": "#326CE5"
+    },
+    {
+      "name": "CKSA - Certified Kubernetes Security Associate by CNCF",
+      "logoKey": "kubernetes",
+      "brandColor": "#326CE5"
+    },
+    {
+      "name": "AWS Solution Architect Associate",
+      "logoKey": "aws",
+      "brandColor": "#FF9900"
+    },
+    {
+      "name": "SAFe Agile Software Engineering (ASE) Certified",
+      "logoKey": "safe",
+      "brandColor": "#5A9E4B"
+    },
+    {
+      "name": "NVIDIA Infrastructure Certified Associate",
+      "logoKey": "nvidia",
+      "brandColor": "#76B900"
+    },
+    {
+      "name": "Okta Certified Professional",
+      "logoKey": "okta",
+      "brandColor": "#007DC1"
+    },
+    {
+      "name": "Certified Python for Hadoop Development by Cloudera",
+      "logoKey": "cloudera",
+      "brandColor": "#F96702"
+    },
+    {
+      "name": "Certified Oracle Database Administrator",
+      "logoKey": "oracle",
+      "brandColor": "#F80000"
+    },
+    {
+      "name": "Veritas Symantec Technical Specialist",
+      "logoKey": "veritas",
+      "brandColor": "#C4262E"
+    }
+  ],
+  "education": [
+    {
+      "degree": "Post Graduate Program in AI Agents for Software Applications",
+      "school": "The University of Texas at Austin, McCombs School of Business",
+      "location": "Austin, TX",
+      "years": "Oct 2025 – Dec 2025"
+    },
+    {
+      "degree": "Advanced Certificate in Artificial Intelligence and Machine Learning",
+      "school": "Indian Institute of Information Technology",
+      "location": "Hyderabad, India",
+      "years": "May 2018 – Aug 2018"
+    },
+    {
+      "degree": "Executive Master of Business Administration",
+      "school": "Andhra University",
+      "location": "Hyderabad, India",
+      "years": "Aug 2013 – May 2015"
+    },
+    {
+      "degree": "Bachelor of Technology in Computer Science and Information Technology",
+      "school": "Jawaharlal Nehru Technological University",
+      "location": "Hyderabad, India",
+      "years": "Jun 2001 – May 2005"
+    },
+    {
+      "degree": "Virtual Graduate Program for Technology Acceleration",
+      "school": "Founder Institute",
+      "location": "Palo Alto, CA",
+      "years": "May 2014 – Oct 2014"
+    }
+  ],
+  "awards": [
+    {
+      "title": "Project Nanda",
+      "text": "Led the design and implementation of a Kubernetes-native automation control plane for air-gapped GDC deployments, enabling isolated multi-tenant enterprise migrations."
+    },
+    {
+      "title": "IEEE Publication",
+      "text": "Design of Real-Time Compute Model — Optimizing Architecture Using RAG and Tiny-BERT Models."
+    },
+    {
+      "title": "ACM Research Publication",
+      "text": "Edge AI Consensus — Blockchain-Secured Federated Learning for Trustless Intelligence Network."
+    },
+    {
+      "title": "Technical Reviewer & Research Associate",
+      "text": "ASICs GenAI Engineering Initiative at International Journal of Global Innovations — 2025 Chapter."
+    },
+    {
+      "title": "ResearchGate Contributor",
+      "text": "",
+      "link": "https://www.researchgate.net/scientific-contributions/Prasad-Gadiraju-2319839790"
+    }
+  ]
+};
