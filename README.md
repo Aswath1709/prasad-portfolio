@@ -22,7 +22,7 @@
 3. Click the **pencil icon** (edit)
 4. Change whatever you need
 5. Click **Commit changes**
-6. Live site updates in 1-2 minutes
+6. Live site at https://USERNAME.github.io/REPO-NAME updates in 1-2 minutes
 
 You never need to touch `index.html`.
 
