@@ -1,6 +1,5 @@
 # Raju Gadiraju — Portfolio
 
-Two files. No React. No build step. No npm.
 
 - `data.js` — **all your content** (edit this to update the portfolio)
 - `index.html` — the template (never needs editing)
