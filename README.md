@@ -1,6 +1,5 @@
 # Raju Gadiraju — Portfolio
 
-Single-file portfolio website. No React, no build step, no npm. Just `index.html`.
 
 ---
 
