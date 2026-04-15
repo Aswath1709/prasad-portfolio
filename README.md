@@ -1,6 +1,5 @@
 # Raju Gadiraju — Portfolio
 
-Two files. No React. No build step. No npm.
 
 - `data.js` — **all your content** (edit this to update the portfolio)
 - `index.html` — the template (never needs editing)
@@ -18,14 +17,15 @@ Two files. No React. No build step. No npm.
 ## Step 2: Connect Netlify (gives you a clean URL without your username)
 
 1. Go to **netlify.com** → click **Sign up** → choose **Sign up with GitHub**
-2. Authorize Netlify to access your GitHub account
-3. Once logged in, click **Add new site** → **Import an existing project**
-4. Click **GitHub** → select your `prasad-portfolio` repo
-5. Leave all build settings blank (no build command, no publish directory — it's static)
-6. Click **Deploy site**
-7. Wait 30 seconds — your site is live with a random name like `silly-unicorn-abc123.netlify.app`
-8. Go to **Site configuration** → **Change site name** → type `prasad-portfolio` → **Save**
-9. Your site is now live at: **`prasad-portfolio.netlify.app`**
+2. Already have an account? Jump to STEP 4
+3. Authorize Netlify to access your GitHub account
+4. Once logged in, click **Add new site** → **Import an existing project**
+5. Click **GitHub** → select your `prasad-portfolio` repo
+6. Leave all build settings blank (no build command, no publish directory — it's static)
+7. Click **Deploy site**
+8. Wait 30 seconds — your site is live with a random name like `silly-unicorn-abc123.netlify.app`
+9. Go to **Site configuration** → **Change site name** → type `prasad-portfolio` → **Save**
+10. Your site is now live at: **`prasad-portfolio.netlify.app`**
 
 ---
 
