@@ -11,7 +11,7 @@
 1. Create a repo on GitHub (e.g. `prasad-portfolio`)
 2. Upload both `index.html` and `data.js`
 3. Go to repo **Settings → Pages → Source → select `main` branch → Save**
-4. Live in 1-2 minutes
+4. Live at https://USERNAME.github.io/REPO-NAME in 1-2 minutes
 
 ---
 
@@ -22,7 +22,7 @@
 3. Click the **pencil icon** (edit)
 4. Change whatever you need
 5. Click **Commit changes**
-6. Live site at https://USERNAME.github.io/REPO-NAME updates in 1-2 minutes
+6. Live site updates in 1-2 minutes
 
 You never need to touch `index.html`.
 
